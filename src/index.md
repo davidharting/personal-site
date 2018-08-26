@@ -17,7 +17,7 @@ B.S. in Computer Science, 4.0 GPA
 * Unit testing with Jest and Mocha
 
 ### Competent
-*I understand these technologies well enough to teach myself how to get whatever I need to done.*
+*I use these technologies effectively on large projects, but have not yet mastered them.*
 
 * AWS CloudWatch, Dynamo, S3, and SQS
 * CSS / SCSS
@@ -29,7 +29,7 @@ B.S. in Computer Science, 4.0 GPA
 * Webpack
 
 ### Familiar
-*I have experience with these technologies and am eager to learn more.*
+*I have used these technologies for small projects or have limited exposure to them at work.*
 
 * AWS Lambda, EC2, and Redshift
 * Scikit-Learn / Machine learning
