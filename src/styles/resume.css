@@ -1,0 +1,20 @@
+
+.resume h1 {
+  letter-spacing: 5px;
+  font-variant: small-caps;
+}
+
+.resume h4 {
+  display: flex;
+  justify-content: space-between;
+  /* font-style: italic; */
+}
+
+.resume ul {
+  list-style-type: square;
+}
+
+.resume ul li {
+  margin-top: 10px;
+  font-size: 14px;
+}
