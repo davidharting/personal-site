@@ -37,6 +37,14 @@ class PostsIndex extends React.Component {
             </div>
           )
         })}
+        <h3>Older posts</h3>
+        <p>
+          Please checkout my older blog posts at&nbsp;
+          <a href="https://davidharting.wordpress.com">
+            davidharting.wordpress.com
+          </a>
+          .
+        </p>
       </Layout>
     )
   }
