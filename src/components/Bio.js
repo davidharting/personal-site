@@ -31,12 +31,13 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who lives and works in San
-              Francisco building useful things.
-              {` `}
+              I'm <strong>{author}</strong> a full-stack developer from Carmel,
+              Indiana.
+              <br />
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                Say hello on Twiter
               </a>
+              👋
             </p>
           </div>
         )
