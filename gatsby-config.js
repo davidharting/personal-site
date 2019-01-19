@@ -6,6 +6,9 @@ module.exports = {
     siteUrl: `https://www.davidharting.com`,
     social: {
       twitter: `davehrtng`,
+      linkedIn: `davidharting`,
+      gitHub: `davidharting`,
+      email: `davidhartingdev@gmail.com`,
     },
   },
   plugins: [
