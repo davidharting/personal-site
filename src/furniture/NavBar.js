@@ -7,6 +7,7 @@ export default function NavBar({ children }) {
         listStyleType: 'none',
         margin: '5px', // TODO: Use rhythm
         padding: 0,
+        fontSize: '1.3em',
       }}
     >
       {children}

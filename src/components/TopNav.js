@@ -5,7 +5,7 @@ import NavItem from '../furniture/NavItem'
 function TopNav() {
   return (
     <NavBar>
-      <NavItem to="#">Home</NavItem>
+      <NavItem to="/">Home</NavItem>
       &nbsp;|&nbsp;
       <NavItem to="/posts">Posts</NavItem>
     </NavBar>
