@@ -1,25 +1,66 @@
 {
-  "name": "metalsmith-trial",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "node index.js",
-    "deploy": "npm run build && npm run sync",
-    "sync": "aws s3 sync ./public s3://www.davidharting.com/ --profile s3-deployer --acl public-read",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "david-harting-personal-site",
+  "private": true,
+  "description": "David Harting's personal website",
+  "version": "0.1.0",
+  "author": "David Harting <davidhartingdev@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/davidharting/personal-site/issues"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "clean-css": "4.2.1",
-    "jstransformer-handlebars": "1.1.0",
-    "metalsmith": "2.3.0",
-    "metalsmith-clean-css": "6.0.0",
-    "metalsmith-discover-partials": "0.1.2",
-    "metalsmith-layouts": "2.1.0",
-    "metalsmith-markdown": "0.2.2"
+    "gatsby": "^2.0.76",
+    "gatsby-image": "^2.0.22",
+    "gatsby-plugin-feed": "^2.0.8",
+    "gatsby-plugin-google-analytics": "^2.0.5",
+    "gatsby-plugin-manifest": "^2.0.5",
+    "gatsby-plugin-offline": "^2.0.5",
+    "gatsby-plugin-react-helmet": "^3.0.0",
+    "gatsby-plugin-sharp": "^2.0.6",
+    "gatsby-plugin-typography": "^2.2.0",
+    "gatsby-remark-copy-linked-files": "^2.0.5",
+    "gatsby-remark-images": "^2.0.4",
+    "gatsby-remark-prismjs": "^3.0.0",
+    "gatsby-remark-responsive-iframe": "^2.0.5",
+    "gatsby-remark-smartypants": "^2.0.5",
+    "gatsby-source-filesystem": "^2.0.2",
+    "gatsby-transformer-remark": "^2.1.6",
+    "gatsby-transformer-sharp": "^2.1.3",
+    "prismjs": "^1.15.0",
+    "react": "^16.5.1",
+    "react-dom": "^16.5.1",
+    "react-helmet": "^5.2.0",
+    "react-typography": "^0.16.13",
+    "typeface-merriweather": "0.0.43",
+    "typeface-montserrat": "0.0.43",
+    "typography": "^0.16.17",
+    "typography-theme-st-annes": "^0.16.18"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-plugin-react": "^7.11.1",
+    "prettier": "^1.14.2"
+  },
+  "homepage": "https://www.davidharting.com",
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "MIT",
+  "main": "n/a",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidharting/personal-site.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop",
+    "deploy": "npm run build && npm run sync",
+    "develop": "gatsby develop",
+    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "serve": "gatsby serve",
+    "start": "npm run develop",
+    "sync": "aws s3 sync ./public s3://www.davidharting.com/ --profile s3-deployer --acl public-read",
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+  }
 }
