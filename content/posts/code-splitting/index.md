@@ -8,7 +8,7 @@ I recently set up code splitting for a moderately sized, two-year old React app 
 
 I experienced conflicting documentation and surprising bugs, so I wanted to document my findings here.
 
-## Key takeaway
+## Key takeaway 🔑
 
 **Avoid manual configuration if you can.**
 
@@ -20,13 +20,13 @@ All that being said, setting up code splitting yourself is quite possible, just 
 
 ## Why code split?
 
-**Faster initial page loads for our customers.**
+⚡️**Faster initial page loads for our customers.** ⚡️
 
 Our bundle was big and getting bigger. It takes a few seconds to download it the first time on good internet. Code-splitting allows Webpack to divide out our bundle into the JavaScript needed for each route in our single-page app. That way, when you hit a route, you can load a much smaller bundle much more quickly.
 
 This is particularly appropriate for our use case. We have a lot of admin-only routes that our customers cannot visit. We also want to build more prototypes routes that only a small percentage of customers will ever see. Currently, all customers are loading a lot of JavaScript and CSS that they simply never execute.
 
-## What I read and tried
+## What I read and tried 📚
 
 If you try to find documentation on **The Way**™️ to do code-splitting with React Router and Webpack 4, you will find a lot of conflicting information. I first visited the React Router docs for [their recommendation on code splitting](https://reacttraining.com/react-router/web/guides/code-splitting). They suggest that we use [`@loadable/component`](https://www.smooth-code.com/open-source/loadable-components/docs/getting-started/).
 
@@ -115,7 +115,7 @@ Until the `CustomersPage` module is available, Suspense will simply fallback to 
 
 Note that the `Suspense` parent component can be anywhere in the tree. It does not have to directly wrap each dynamically imported component. So you can have a single Suspense component at the outermost level of your app, as long as you are okay with all the child dynamic components having the same fallback.
 
-### Hot module reloading
+### Hot module reloading 🌶
 
 Getting hot module reloading with code splitting is not "for free." Well, [it would be if we were using older, third-party libraries](https://github.com/gaearon/react-hot-loader#code-splitting). But it doesn't work out of the box with Suspense / lazy.
 
