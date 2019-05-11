@@ -52,7 +52,7 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "bust-cache": "aws cloudfront create-invalidation --distribution-id E13FMPKR54AMQM --paths /index.html",
+    "bust-cache": "aws cloudfront create-invalidation --profile s3-deployer --distribution-id E13FMPKR54AMQM --paths /index.html",
     "dev": "gatsby develop",
     "deploy": "npm run build && npm run sync && npm run bust-cache",
     "develop": "gatsby develop",
