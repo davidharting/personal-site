@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `David Harting`,
+        name: `David Harting's personal site`,
         short_name: `David Harting`,
         start_url: `/`,
         background_color: `#ffffff`,
