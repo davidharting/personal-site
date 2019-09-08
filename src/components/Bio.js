@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
+import Emoji from '../components/emoji'
 import { rhythm } from '../utils/typography'
 
 function Bio() {
@@ -37,7 +38,7 @@ function Bio() {
               <a href={`https://twitter.com/${social.twitter}`}>
                 Say hello on Twiter
               </a>
-              👋
+              <Emoji alt="Waving hand" emoji="👋" />
             </p>
           </div>
         )

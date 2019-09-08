@@ -8,7 +8,7 @@
     "url": "https://github.com/davidharting/personal-site/issues"
   },
   "dependencies": {
-    "gatsby": "^2.0.76",
+    "gatsby": "2.15.9",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-feed": "^2.0.8",
     "gatsby-plugin-google-analytics": "^2.0.5",
@@ -37,9 +37,17 @@
     "typography-theme-st-annes": "^0.16.18"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.11.1",
-    "prettier": "^1.14.2"
+    "@typescript-eslint/eslint-plugin": "2.1.0",
+    "@typescript-eslint/parser": "2.1.0",
+    "babel-eslint": "10.0.3",
+    "eslint": "6.3.0",
+    "eslint-config-react-app": "5.0.1",
+    "eslint-plugin-flowtype": "4.3.0",
+    "eslint-plugin-import": "2.18.2",
+    "eslint-plugin-jsx-a11y": "6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "2.0.1",
+    "prettier": "1.14.2"
   },
   "homepage": "https://www.davidharting.com",
   "keywords": [
