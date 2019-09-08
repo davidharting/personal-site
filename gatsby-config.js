@@ -1,3 +1,11 @@
+if (process.env.NODE_ENV === 'development') {
+  require('dotenv').config()
+}
+
+if (!process.env.GOODREADS_API_KEY) {
+  throw new Error('Missing required environment variable GOODREADS_API_KEY')
+}
+
 module.exports = {
   siteMetadata: {
     title: `David Harting`,
@@ -47,6 +55,13 @@ module.exports = {
           `gatsby-remark-copy-linked-files`,
           `gatsby-remark-smartypants`,
         ],
+      },
+    },
+    {
+      resolve: `@halkeye/gatsby-source-goodreads`,
+      options: {
+        developerKey: process.env.GOODREADS_API_KEY, // 'Y8SJCxmbz6yLdC4IRUMxIw'
+        goodReadsUserId: '5041981-david-harting',
       },
     },
     `gatsby-transformer-sharp`,

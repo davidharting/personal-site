@@ -14,7 +14,14 @@ class Home extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Home"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+          keywords={[
+            ,
+            ...[`something`],
+            `blog`,
+            `gatsby`,
+            `javascript`,
+            `react`,
+          ]}
         />
         <h1>Hi, I'm David Harting 👋</h1>
         <p>I'm a full-stack software developer from Carmel, Indiana.</p>
