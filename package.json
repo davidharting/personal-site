@@ -8,7 +8,6 @@
     "url": "https://github.com/davidharting/personal-site/issues"
   },
   "dependencies": {
-    "@halkeye/gatsby-source-goodreads": "^0.0.6",
     "gatsby": "^2.0.76",
     "gatsby-image": "^2.0.22",
     "gatsby-plugin-feed": "^2.0.8",
