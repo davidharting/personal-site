@@ -8,6 +8,7 @@
     "url": "https://github.com/davidharting/personal-site/issues"
   },
   "dependencies": {
+    "@halkeye/gatsby-source-goodreads": "0.0.6",
     "gatsby": "2.15.9",
     "gatsby-image": "2.2.17",
     "gatsby-plugin-feed": "2.3.11",
@@ -40,6 +41,7 @@
     "@typescript-eslint/eslint-plugin": "2.1.0",
     "@typescript-eslint/parser": "2.1.0",
     "babel-eslint": "10.0.3",
+    "dotenv": "8.1.0",
     "eslint": "6.3.0",
     "eslint-config-react-app": "5.0.1",
     "eslint-plugin-flowtype": "4.3.0",
