@@ -1,19 +1,10 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es6": true,
+  globals: {
+    __PATH_PREFIX__: true,
   },
-  "plugins": [
-    "react",
-  ],
-  "globals": {
-    "graphql": false,
+  extends: `react-app`,
+  rules: {
+    'no-unused-vars': 'error',
+    'jsx-a11y/accessible-emoji': 'error',
   },
-  "parserOptions": {
-    "sourceType": "module",
-    "ecmaFeatures": {
-      "ecmaVersion": 2018,
-      "jsx": true,
-    },
-  }
 }

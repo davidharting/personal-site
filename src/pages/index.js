@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Image from 'gatsby-image'
 
+import Emoji from '../components/emoji'
 import Layout from '../components/Layout'
 import SEO from '../components/seo'
 
@@ -23,7 +24,9 @@ class Home extends React.Component {
             `react`,
           ]}
         />
-        <h1>Hi, I'm David Harting 👋</h1>
+        <h1>
+          Hi, I'm David Harting <Emoji alt="Waving hand" emoji="👋" />
+        </h1>
         <p>I'm a full-stack software developer from Carmel, Indiana.</p>
         <Image
           fluid={data.avatar.childImageSharp.fluid}
@@ -33,7 +36,9 @@ class Home extends React.Component {
             maxWidth: 300,
           }}
         />
-        <h2>Let's get to know each other 🤝</h2>
+        <h2>
+          Let's get to know each other <Emoji alt="Shaking hands" emoji="🤝" />
+        </h2>
         <ul>
           <li>
             Send me an email{' '}
