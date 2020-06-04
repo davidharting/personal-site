@@ -1,7 +1,15 @@
 # Personal Site
+
 🌎 www.davidharting.com
 
 ## Deploy
+
+Deployment is taken care of automagically with Gatsby Cloud.
+
+### Manual deploy
+
+If I need to deploy manually, here are some helpful notes.
+
 Deployment is done using the `awscli` which is installed via `pip`.
 
 To set up my environment I did.
