@@ -45,14 +45,14 @@ class PostTemplate extends React.Component {
         >
           <li>
             {previous && (
-              <Link to={`posts/${previous.fields.slug}`} rel="prev">
+              <Link to={`/posts${previous.fields.slug}`} rel="prev">
                 ← {previous.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
             {next && (
-              <Link to={`posts${next.fields.slug}`} rel="next">
+              <Link to={`/posts${next.fields.slug}`} rel="next">
                 {next.frontmatter.title} →
               </Link>
             )}
@@ -65,7 +65,7 @@ class PostTemplate extends React.Component {
 
 export default PostTemplate
 
-export const pageQuery = graphql`
+export const query = graphql`
   query PostBySlug($slug: String!) {
     site {
       siteMetadata {

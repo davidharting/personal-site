@@ -29,7 +29,7 @@ class PostsIndex extends React.Component {
                   marginBottom: rhythm(1 / 4),
                 }}
               >
-                <Link style={{ boxShadow: `none` }} to={node.fields.path}>
+                <Link style={{ boxShadow: `none` }} to={`.${node.fields.slug}`}>
                   {title}
                 </Link>
               </h3>
@@ -53,7 +53,7 @@ class PostsIndex extends React.Component {
 
 export default PostsIndex
 
-export const pageQuery = graphql`
+export const query = graphql`
   query {
     site {
       siteMetadata {
@@ -66,7 +66,6 @@ export const pageQuery = graphql`
           excerpt
           fields {
             slug
-            path
           }
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
