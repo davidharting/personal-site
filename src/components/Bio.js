@@ -32,7 +32,7 @@ function Bio() {
               }}
             />
             <p>
-              I'm <strong>{author}</strong> a full-stack developer from
+              I'm <strong>{author}</strong>, a full-stack developer from
               Westfield, Indiana.
               <br />
               <a href={`https://twitter.com/${social.twitter}`}>
