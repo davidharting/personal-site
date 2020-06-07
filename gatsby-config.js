@@ -21,10 +21,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
+      options: { path: `${__dirname}/assets/images`, name: `images` },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -49,8 +46,8 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
@@ -67,7 +64,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/david.jpg`,
+        icon: `static/david.jpg`,
       },
     },
     `gatsby-plugin-offline`,

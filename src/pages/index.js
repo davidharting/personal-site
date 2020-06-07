@@ -20,7 +20,7 @@ class Home extends React.Component {
         <h1>
           Hi, I'm David Harting <Emoji alt="Waving hand" emoji="👋" />
         </h1>
-        <p>I'm a full-stack software developer from Carmel, Indiana.</p>
+        <p>I'm a full-stack software developer from Westfield, Indiana.</p>
         <Image
           fluid={data.avatar.childImageSharp.fluid}
           alt="Headshot of David Harting"
@@ -72,7 +72,7 @@ export const query = graphql`
         }
       }
     }
-    avatar: file(absolutePath: { regex: "/david.jpg/" }) {
+    avatar: file(relativePath: { eq: "david.JPG" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
