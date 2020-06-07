@@ -49,25 +49,18 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    `gatsby-plugin-feed`,
-    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `David Harting's personal site`,
         short_name: `David Harting`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#00BFFF`,
         display: `minimal-ui`,
         icon: `static/david.jpg`,
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`, Will have to reinstall to re-enable
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,
