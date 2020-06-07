@@ -21,10 +21,7 @@ module.exports = {
     },
     {
       resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/content/assets`,
-        name: `assets`,
-      },
+      options: { path: `${__dirname}/assets/images`, name: `images` },
     },
     {
       resolve: `gatsby-transformer-remark`,
@@ -49,15 +46,8 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
-    `gatsby-plugin-feed`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -65,12 +55,12 @@ module.exports = {
         short_name: `David Harting`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#663399`,
+        theme_color: `#00BFFF`,
         display: `minimal-ui`,
-        icon: `content/assets/david.jpg`,
+        icon: `static/david.jpg`,
       },
     },
-    `gatsby-plugin-offline`,
+    // `gatsby-plugin-offline`, Will have to reinstall to re-enable
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,

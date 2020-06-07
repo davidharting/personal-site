@@ -9,7 +9,7 @@ function Bio() {
   return (
     <StaticQuery
       query={bioQuery}
-      render={data => {
+      render={(data) => {
         const { author, social } = data.site.siteMetadata
         return (
           <div
@@ -32,11 +32,11 @@ function Bio() {
               }}
             />
             <p>
-              I'm <strong>{author}</strong> a full-stack developer from Carmel,
-              Indiana.
+              I'm <strong>{author}</strong> a full-stack developer from
+              Westfield, Indiana.
               <br />
               <a href={`https://twitter.com/${social.twitter}`}>
-                Say hello on Twiter
+                Say hello on Twitter
               </a>
               <Emoji alt="Waving hand" emoji="👋" />
             </p>
@@ -49,7 +49,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(absolutePath: { regex: "/david.jpg/" }) {
+    avatar: file(relativePath: { eq: "david.JPG" }) {
       childImageSharp {
         fixed(width: 50, height: 50, quality: 100) {
           ...GatsbyImageSharpFixed
