@@ -49,7 +49,7 @@ function Bio() {
 
 const bioQuery = graphql`
   query BioQuery {
-    avatar: file(relativePath: { eq: "david.JPG" }) {
+    avatar: file(relativePath: { eq: "headshot-20200831.jpeg" }) {
       childImageSharp {
         fixed(width: 50, height: 50, quality: 100) {
           ...GatsbyImageSharpFixed
