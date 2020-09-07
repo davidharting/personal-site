@@ -57,7 +57,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#00BFFF`,
         display: `minimal-ui`,
-        icon: `static/david.jpg`,
+        icon: `assets/images/headshot-20200831.jpeg`,
       },
     },
     // `gatsby-plugin-offline`, Will have to reinstall to re-enable

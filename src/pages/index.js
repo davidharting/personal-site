@@ -72,7 +72,7 @@ export const query = graphql`
         }
       }
     }
-    avatar: file(relativePath: { eq: "david.JPG" }) {
+    avatar: file(relativePath: { eq: "headshot-20200831.jpeg" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid
