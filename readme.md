@@ -1,16 +1,9 @@
 # Personal Site
-🌎 www.davidharting.com
 
-## Deploy
-Deployment is done using the `awscli` which is installed via `pip`.
+🌎 davidharting.netlify.app
 
-To set up my environment I did.
+## Deployment
 
-```bash
-pyenv local 3.7.0
-pip install awscli --upgrade --user
-```
+Deployment is taken care of by Netlify, which automatically deploys the latest commit of the master branch.
 
-Note that I am relying on having a `s3-deploy` user with credentials to upload to S3 buckets.
-
-To deploy simply `npm run deploy`.
+- [ ] Todo: Rename `master` to `main`
