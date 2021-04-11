@@ -34,7 +34,8 @@
     "eslint-plugin-jsx-a11y": "6.4.1",
     "eslint-plugin-react": "7.23.2",
     "eslint-plugin-react-hooks": "4.2.0",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "typescript": "^4.2.4"
   },
   "homepage": "https://www.davidharting.com",
   "keywords": [
@@ -48,13 +49,12 @@
   },
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "clean": "gatsby clean",
     "develop": "gatsby develop",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css}'",
+    "lint": "eslint --ext .js,.jsx,ts,tsx --ignore-pattern public .",
     "serve": "gatsby serve",
-    "start": "npm run develop",
+    "start": "gatsby develop",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   }
 }

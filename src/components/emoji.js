@@ -1,8 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
 
+// node_modules/gatsby/dist/utils/eslint-config.js
+
 function Emoji({ alt, emoji }) {
-  return <span aria-label={alt}>{emoji}</span>;
+  return (
+    <span role="img" aria-label={alt}>
+      {emoji}
+    </span>
+  );
 }
 
 Emoji.propTypes = {
