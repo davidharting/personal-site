@@ -1,5 +1,4 @@
 import React from 'react'
-import TopNav from './TopNav'
 import { rhythm } from '../utils/typography'
 
 class Layout extends React.Component {
@@ -15,13 +14,7 @@ class Layout extends React.Component {
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
-        <TopNav />
         {children}
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
     )
   }
