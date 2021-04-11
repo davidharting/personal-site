@@ -1,6 +1,14 @@
 import Typography from 'typography'
 import StAnnesTheme from 'typography-theme-st-annes'
 
+const originalOrverideStyles = StAnnesTheme.overrideStyles
+
+StAnnesTheme.overrideStyles = (handles, options) => {
+  const styles = originalOrverideStyles(handles, options)
+  styles.a.color = '#1ca086'
+  return styles
+}
+
 const typography = new Typography(StAnnesTheme)
 
 // Hot reload typography in development.
