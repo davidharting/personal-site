@@ -1,16 +1,16 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import Image from 'gatsby-image'
+import React from "react";
+import { graphql } from "gatsby";
+import Image from "gatsby-image";
 
-import Emoji from '../components/emoji'
-import Layout from '../components/Layout'
-import SEO from '../components/seo'
+import Emoji from "../components/emoji";
+import Layout from "../components/Layout";
+import SEO from "../components/seo";
 
 class Home extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const { social } = this.props.data.site.siteMetadata
+    const { data } = this.props;
+    const siteTitle = data.site.siteMetadata.title;
+    const { social } = this.props.data.site.siteMetadata;
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -25,7 +25,7 @@ class Home extends React.Component {
           fluid={data.avatar.childImageSharp.fluid}
           alt="Headshot of David Harting"
           style={{
-            borderRadius: '50%',
+            borderRadius: "50%",
             maxWidth: 300,
           }}
         />
@@ -34,30 +34,30 @@ class Home extends React.Component {
         </h2>
         <ul>
           <li>
-            Send me an email{' '}
+            Send me an email{" "}
             <a href={`mailto:${social.email}`}>{social.email}</a>
           </li>
           <li>
-            Check out my{' '}
+            Check out my{" "}
             <a href={`http://www.github.com/${social.gitHub}`}>GitHub</a>
           </li>
           <li>
-            Say hello on{' '}
+            Say hello on{" "}
             <a href={`https://www.twitter.com/${social.twitter}`}>Twitter</a>
           </li>
           <li>
-            Connect with me on{' '}
+            Connect with me on{" "}
             <a href={`https://www.linkedin.com/in/${social.linkedIn}`}>
               LinkedIn
             </a>
           </li>
         </ul>
       </Layout>
-    )
+    );
   }
 }
 
-export default Home
+export default Home;
 
 export const query = graphql`
   query {
@@ -80,4 +80,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

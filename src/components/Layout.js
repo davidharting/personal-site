@@ -1,9 +1,9 @@
-import React from 'react'
-import { rhythm } from '../utils/typography'
+import React from "react";
+import { rhythm } from "../utils/typography";
 
 class Layout extends React.Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return (
       <div
@@ -16,8 +16,8 @@ class Layout extends React.Component {
       >
         {children}
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;
