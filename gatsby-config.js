@@ -13,10 +13,18 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: "gatsby-plugin-typescript",
+      options: {
+        isTSX: true,
+        allExtensions: true,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: { path: `./assets/images`, name: "images" },
       __key: "images",
     },
+    "gatsby-plugin-image",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
