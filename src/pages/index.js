@@ -1,6 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import Emoji from "../components/emoji";
 import Layout from "../components/Layout";
@@ -21,13 +21,10 @@ class Home extends React.Component {
           Hi, I'm David Harting <Emoji alt="Waving hand" emoji="👋" />
         </h1>
         <p>I'm a full-stack software developer from Westfield, Indiana.</p>
-        <Image
-          fluid={data.avatar.childImageSharp.fluid}
+        <GatsbyImage
           alt="Headshot of David Harting"
-          style={{
-            borderRadius: "50%",
-            maxWidth: 300,
-          }}
+          image={data.avatar.childImageSharp.gatsbyImageData}
+          imgStyle={{ borderRadius: "50%" }}
         />
         <h2>
           Let's get to know each other <Emoji alt="Shaking hands" emoji="🤝" />
@@ -74,9 +71,7 @@ export const query = graphql`
     }
     avatar: file(relativePath: { eq: "headshot-20200831.jpeg" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid
-        }
+        gatsbyImageData(layout: CONSTRAINED, width: 300)
       }
     }
   }
