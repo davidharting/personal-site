@@ -31,37 +31,63 @@ const Home: React.FC<PageProps<QueryData>> = ({ data }) => {
   return (
     <Layout>
       <Seo />
-      <h1>
-        Hi, I'm David Harting <Emoji alt="Waving hand" emoji="👋" />
-      </h1>
-      <p>I'm a full-stack software developer from Westfield, Indiana.</p>
+
+      <h1>Hi! I'm David Harting,</h1>
+      <p>
+        <span>and its a great day to build software</span>
+        <Emoji alt="sunshine" emoji="☀️" />
+      </p>
+
       <GatsbyImage
         alt="Headshot of David Harting"
         image={data.avatar.childImageSharp.gatsbyImageData}
         imgStyle={{ borderRadius: "50%" }}
       />
+
+      <h2>About me</h2>
+      <p>
+        I'm an experienced developerfrom Westfield, Indiana, with a focus on
+        web, data, and developer tools.
+      </p>
+      <p>
+        I am happiest working closely with product and design to navigate
+        tradeoffs and ship products. I am passionate about code review and
+        testing.
+      </p>
+      <p>
+        I have worked in healthcare, an HR tech startup, and now I am at
+        Fishtown Analytics, working on a cloud IDE for analytics engineers.
+      </p>
+
+      <h2>Let's connect</h2>
+
+      <p>
+        <Emoji alt="Shaking hands" emoji="✍️" />
+        &nbsp;I <b>write</b> on my{" "}
+        <a href="https://world.hey.com/david.harting">Hey World</a>.
+        <ul style={{ listStyleType: "none", display: "flex" }}>
+          <li>
+            <a href={`mailto:${social.email}`}>{social.email}</a> |&nbsp;
+          </li>
+          <li>
+            <a href={`http://www.github.com/${social.gitHub}`}>GitHub</a>{" "}
+            |&nbsp;
+          </li>
+          <li>
+            <a href={`https://www.twitter.com/${social.twitter}`}>Twitter</a>{" "}
+            |&nbsp;
+          </li>
+          <li>
+            <a href={`https://www.linkedin.com/in/${social.linkedIn}`}>
+              LinkedIn
+            </a>{" "}
+          </li>
+        </ul>
+      </p>
+
       <h2>
-        Let's get to know each other <Emoji alt="Shaking hands" emoji="🤝" />
+        But like, actually about <i>me</i>. Not just work stuff.
       </h2>
-      <ul>
-        <li>
-          Send me an email <a href={`mailto:${social.email}`}>{social.email}</a>
-        </li>
-        <li>
-          Check out my{" "}
-          <a href={`http://www.github.com/${social.gitHub}`}>GitHub</a>
-        </li>
-        <li>
-          Say hello on{" "}
-          <a href={`https://www.twitter.com/${social.twitter}`}>Twitter</a>
-        </li>
-        <li>
-          Connect with me on{" "}
-          <a href={`https://www.linkedin.com/in/${social.linkedIn}`}>
-            LinkedIn
-          </a>
-        </li>
-      </ul>
     </Layout>
   );
 };
