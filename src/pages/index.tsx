@@ -46,12 +46,12 @@ const Home: React.FC<PageProps<QueryData>> = ({ data }) => {
 
       <h2>About me</h2>
       <p>
-        I'm an experienced developerfrom Westfield, Indiana, with a focus on
-        web, data, and developer tools.
+        I'm an experienced developer from Westfield, Indiana, with a focus on
+        web and data.
       </p>
       <p>
         I am happiest working closely with product and design to navigate
-        tradeoffs and ship products. I am passionate about code review and
+        tradeoffs and to ship quickly. I am passionate about code review and
         testing.
       </p>
       <p>
@@ -63,31 +63,40 @@ const Home: React.FC<PageProps<QueryData>> = ({ data }) => {
 
       <p>
         <Emoji alt="Shaking hands" emoji="✍️" />
-        &nbsp;I <b>write</b> on my{" "}
-        <a href="https://world.hey.com/david.harting">Hey World</a>.
-        <ul style={{ listStyleType: "none", display: "flex" }}>
-          <li>
-            <a href={`mailto:${social.email}`}>{social.email}</a> |&nbsp;
-          </li>
-          <li>
-            <a href={`http://www.github.com/${social.gitHub}`}>GitHub</a>{" "}
-            |&nbsp;
-          </li>
-          <li>
-            <a href={`https://www.twitter.com/${social.twitter}`}>Twitter</a>{" "}
-            |&nbsp;
-          </li>
-          <li>
-            <a href={`https://www.linkedin.com/in/${social.linkedIn}`}>
-              LinkedIn
-            </a>{" "}
-          </li>
-        </ul>
+        &nbsp;I{" "}
+        <a
+          href="https://world.hey.com/david.harting"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <b>write on Hey World</b>
+        </a>
+        , and you can find me on{" "}
+        <a
+          href={`http://www.github.com/${social.gitHub}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </a>
+        ,{" "}
+        <a
+          href={`https://www.twitter.com/${social.twitter}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Twitter
+        </a>
+        , and{" "}
+        <a
+          href={`https://www.linkedin.com/in/${social.linkedIn}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LinkedIn
+        </a>
+        .
       </p>
-
-      <h2>
-        But like, actually about <i>me</i>. Not just work stuff.
-      </h2>
     </Layout>
   );
 };
