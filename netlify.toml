@@ -1,4 +1,8 @@
 [[redirects]]
+from="/posts"
+to="https://world.hey.com/david.harting"
+
+[[redirects]]
 from = "/posts/inspired-by-marty-cagan"
 to="https://world.hey.com/david.harting/what-i-got-out-of-inspired-by-marty-cagan-b94ca32a"
 
