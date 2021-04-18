@@ -1,0 +1,20 @@
+[[redirects]]
+from="/posts"
+to="https://world.hey.com/david.harting"
+
+[[redirects]]
+from = "/posts/inspired-by-marty-cagan"
+to="https://world.hey.com/david.harting/what-i-got-out-of-inspired-by-marty-cagan-b94ca32a"
+
+[[redirects]]
+from = "/posts/code-splitting"
+to="https://world.hey.com/david.harting/how-i-set-up-code-splitting-on-an-existing-react-app-with-webpack-4-babel-7-and-react-router-ba98c143"
+
+[[redirects]]
+from="/posts/use-mouse-position"
+to="https://world.hey.com/david.harting/using-the-mouse-position-with-react-hooks-and-rxjs-94883bc0"
+
+[[redirects]]
+from="/posts/prune-your-git-branches"
+to="https://world.hey.com/david.harting/how-to-delete-all-but-one-local-git-branch-22021d7a"
+
