@@ -1,18 +1,12 @@
 import React from "react";
 import { graphql, PageProps } from "gatsby";
-import { GatsbyImage, IGatsbyImageData } from "gatsby-plugin-image";
-
+import Avatar from "../components/Avatar";
 import Emoji from "../components/Emoji";
 import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
 // TODO: Generate graphql query types
 interface QueryData {
-  avatar: {
-    childImageSharp: {
-      gatsbyImageData: IGatsbyImageData;
-    };
-  };
   site: {
     siteMetadata: {
       social: {
@@ -31,23 +25,16 @@ const Home: React.FC<PageProps<QueryData>> = ({ data }) => {
   return (
     <Layout>
       <Seo />
-
       <h1>Hi! I'm David Harting,</h1>
       <p>
         <span>and its a great day to build software</span>
         <Emoji alt="sunshine" emoji="☀️" />
       </p>
-
-      <GatsbyImage
-        alt="Headshot of David Harting"
-        image={data.avatar.childImageSharp.gatsbyImageData}
-        imgStyle={{ borderRadius: "50%" }}
-      />
-
+      <Avatar />
       <h2>About me</h2>
       <p>
-        I'm an experienced developer from Westfield, Indiana, with a focus on
-        web and data.
+        I'm an experienced, full-stack software engineer from Westfield,
+        Indiana, with a focus on web and data.
       </p>
       <p>
         I am happiest working closely with product and design to navigate
@@ -114,11 +101,6 @@ export const query = graphql`
           linkedIn
           twitter
         }
-      }
-    }
-    avatar: file(relativePath: { eq: "headshot-20200831.jpeg" }) {
-      childImageSharp {
-        gatsbyImageData(layout: CONSTRAINED, width: 300)
       }
     }
   }
